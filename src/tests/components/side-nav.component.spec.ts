@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SideNavComponent } from './side-nav.component';
+import { SideNavComponent } from '../../components/side-nav/side-nav.component';
 
 describe('SideNavComponent', () => {
   let component: SideNavComponent;
