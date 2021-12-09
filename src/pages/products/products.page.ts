@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'wkt-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.scss']
+  templateUrl: './products.page.html',
+  styleUrls: ['./products.page.scss']
 })
-export class ProductComponent implements OnInit {
+export class ProductsPage implements OnInit {
 
   constructor() { }
 
