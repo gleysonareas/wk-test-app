@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class SalesOrderService {
 
+  endpoint = 'SalesOrderData';
+
 constructor() { }
 
 }

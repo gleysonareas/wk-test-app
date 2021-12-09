@@ -1,3 +1,7 @@
-<div *ngFor="let page of pages">
-    <wkt-menu-item [item]="page"></wkt-menu-item>
-</div>
+<wkt-header-template></wkt-header-template>
+<wkt-nav-template>
+    <div *ngFor="let page of pages">
+        <wkt-menu-item [item]="page"></wkt-menu-item>
+    </div>
+</wkt-nav-template>
+<wkt-footer-template></wkt-footer-template>
