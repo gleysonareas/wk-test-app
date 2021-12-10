@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SideNavComponent implements OnInit {
 
   @Input() 
-  public showFiller = true;
+  public showFiller = false;
 
   constructor() { }
 
