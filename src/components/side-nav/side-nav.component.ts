@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { PAGES_MENU } from './../../consts/pages-menu.const';
+import { PagesMenuModel } from './../../models/pages-menu.model';
 
 @Component({
   selector: 'wkt-side-nav',
@@ -7,8 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SideNavComponent implements OnInit {
 
-  @Input() 
-  public showFiller = true;
+  public menuItens: PagesMenuModel[] = PAGES_MENU;
 
   constructor() { }
 

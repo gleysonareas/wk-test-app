@@ -7,8 +7,9 @@ import { ListComponent } from './list-component/list.component';
 import { TabNavComponent } from './tab-nav-component/tab-nav.component';
 import { ToolbarComponent } from './toolbar-component/toolbar.component';
 import { CardComponent } from './card-component/card.component';
-import { SharedModule } from 'src/shared/shared.module';
+import { SharedModule } from './../shared/shared.module';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { PagesRoutingModule } from './../pages/pages-routing.module';
 @NgModule({
   declarations: [
     MenuItemComponent,
@@ -21,8 +22,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     ExpansionPanelComponent,
   ],
   imports: [
-    CommonModule,
     SharedModule,
+    PagesRoutingModule,
   ],
   exports: [
     MenuItemComponent,

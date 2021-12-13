@@ -9,7 +9,7 @@ import { PagesMenuModel } from '../../models/pages-menu.model';
 export class MenuItemComponent implements OnInit {
 
   @Input()
-  public item!: PagesMenuModel;
+  public itemMenu!: PagesMenuModel;
 
   constructor() { }
 

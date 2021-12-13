@@ -1,9 +1,7 @@
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-        <p>Auto-resizing sidenav</p>
-        <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-        <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button>
-    </mat-drawer>
-</mat-drawer-container>
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened fixedInViewport=true fixedTopGap="64">
+        <mat-nav-list class="nav-list" *ngFor="let item of menuItens">
+            <wkt-menu-item [itemMenu]='item'></wkt-menu-item>
+        </mat-nav-list>
+    </mat-sidenav>
+</mat-sidenav-container>

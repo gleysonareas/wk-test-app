@@ -4,6 +4,7 @@ import { ComponentsModule } from 'src/components/components.module';
 import { NavTemplate } from './nav/nav.template';
 import { HeaderTemplate } from './header/header.template';
 import { FooterTemplate } from './footer/footer.template';
+import { SharedModule } from './../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FooterTemplate } from './footer/footer.template';
   imports: [
     CommonModule,
     ComponentsModule,
+    SharedModule,
   ],
   exports: [
     HeaderTemplate,

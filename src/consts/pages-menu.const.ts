@@ -1,24 +1,24 @@
-import { PagesMenuModel } from "src/models/pages-menu.model";
+import { PagesMenuModel } from "./../models/pages-menu.model";
 
 export const PAGES_MENU: PagesMenuModel[] = [
     {
         Name: "Home",
-        Path: "",
-        imgPath: "",
+        Path: "pages/home",
+        Icon: "home",
     },
     {
         Name: "Clients",
-        Path: "",
-        imgPath: "",
+        Path: "pages/clients",
+        Icon: "person",
     },
     {
         Name: "Products",
-        Path: "",
-        imgPath: "",
+        Path: "pages/products",
+        Icon: "storefront",
     },
     {
         Name: "Sales Order",
-        Path: "",
-        imgPath: "",
+        Path: "pages/sales-order",
+        Icon: "article",
     },
 ]
