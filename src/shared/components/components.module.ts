@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuItemComponent } from './menu-item-component/menu-item.component';
 import { DialogComponent } from './dialog-component/dialog.component';
 import { ExpansionPanelComponent } from './expansion-panel-component/expansion-panel.component';
 import { ListComponent } from './list-component/list.component';
 import { TabNavComponent } from './tab-nav-component/tab-nav.component';
 import { ToolbarComponent } from './toolbar-component/toolbar.component';
 import { CardComponent } from './card-component/card.component';
-import { SharedModule } from './../shared/shared.module';
-import { SideNavComponent } from './side-nav/side-nav.component';
-import { PagesRoutingModule } from './../pages/pages-routing.module';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+
 @NgModule({
   declarations: [
-    MenuItemComponent,
     ToolbarComponent,
-    SideNavComponent,
     TabNavComponent,
     DialogComponent,
     ListComponent,
@@ -22,13 +22,19 @@ import { PagesRoutingModule } from './../pages/pages-routing.module';
     ExpansionPanelComponent,
   ],
   imports: [
-    SharedModule,
-    PagesRoutingModule,
+    CommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
   ],
   exports: [
-    MenuItemComponent,
+    CommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule,
     ToolbarComponent,
-    SideNavComponent,
     TabNavComponent,
     DialogComponent,
     ListComponent,

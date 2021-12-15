@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ComponentsModule } from 'src/components/components.module';
 import { NavTemplate } from './nav/nav.template';
 import { HeaderTemplate } from './header/header.template';
 import { FooterTemplate } from './footer/footer.template';
-import { SharedModule } from './../shared/shared.module';
+import { PagesModule } from './../../app/pages/pages.module';
 
 @NgModule({
   declarations: [
@@ -13,11 +11,10 @@ import { SharedModule } from './../shared/shared.module';
     FooterTemplate,
   ],
   imports: [
-    CommonModule,
-    ComponentsModule,
-    SharedModule,
+    PagesModule,
   ],
   exports: [
+    PagesModule,
     HeaderTemplate,
     NavTemplate,
     FooterTemplate,
