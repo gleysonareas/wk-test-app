@@ -9,4 +9,12 @@ export class AppApiService {
 
 constructor() { }
 
+public get(): void {
+
+}
+
+public push(): void {
+
+}
+
 }
