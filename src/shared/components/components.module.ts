@@ -1,45 +1,66 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DialogComponent } from './dialog-component/dialog.component';
-import { ExpansionPanelComponent } from './expansion-panel-component/expansion-panel.component';
-import { ListComponent } from './list-component/list.component';
-import { TabNavComponent } from './tab-nav-component/tab-nav.component';
-import { ToolbarComponent } from './toolbar-component/toolbar.component';
-import { CardComponent } from './card-component/card.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTableModule } from '@angular/material/table';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FieldValidationComponent } from './field-validation-component/field-validation.component';
+import { ExpansionPanelComponent } from './expansion-panel-component/expansion-panel.component';
+import { ToolbarComponent } from './toolbar-component/toolbar.component';
+import { DialogComponent } from './dialog-component/dialog.component';
+import { TabNavComponent } from './tab-nav-component/tab-nav.component';
+import { ButtomComponent } from './buttom-component/buttom.component';
+import { ListComponent } from './list-component/list.component';
+import { CardComponent } from './card-component/card.component';
 
 
 @NgModule({
   declarations: [
+    FieldValidationComponent,
+    ExpansionPanelComponent,
     ToolbarComponent,
     TabNavComponent,
     DialogComponent,
+    ButtomComponent,
     ListComponent,
     CardComponent,
-    ExpansionPanelComponent,
   ],
   imports: [
     CommonModule,
-    MatToolbarModule,
     MatIconModule,
-    MatSidenavModule,
     MatListModule,
+    MatTableModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatFormFieldModule,
   ],
   exports: [
     CommonModule,
-    MatToolbarModule,
     MatIconModule,
-    MatSidenavModule,
     MatListModule,
+    MatTableModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    FieldValidationComponent,
+    ExpansionPanelComponent,
     ToolbarComponent,
     TabNavComponent,
     DialogComponent,
+    ButtomComponent,
     ListComponent,
     CardComponent,
-    ExpansionPanelComponent,
   ]
 })
 export class ComponentsModule { }
