@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'wkt-buttom',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buttom.component.scss']
 })
 export class ButtomComponent implements OnInit {
+
+@Input()
+public buttonName!: string;
 
   constructor() { }
 

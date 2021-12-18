@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsPage implements OnInit {
 
+  public buttonName: string = 'Add Client';
+
   constructor() { }
 
   ngOnInit() {
