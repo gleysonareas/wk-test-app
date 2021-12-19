@@ -17,6 +17,7 @@ import { TabNavComponent } from './tab-nav-component/tab-nav.component';
 import { ButtomComponent } from './buttom-component/buttom.component';
 import { ListComponent } from './list-component/list.component';
 import { CardComponent } from './card-component/card.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { CardComponent } from './card-component/card.component';
     MatSidenavModule,
     MatToolbarModule,
     MatFormFieldModule,
+    MatMenuModule,
   ],
   exports: [
     CommonModule,
