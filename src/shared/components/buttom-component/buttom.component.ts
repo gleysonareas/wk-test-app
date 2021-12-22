@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogComponent } from '../dialog-component/dialog.component';
 
 @Component({
   selector: 'wkt-buttom',
@@ -7,12 +9,16 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ButtomComponent implements OnInit {
 
-@Input()
-public buttonName!: string;
+  @Input()
+  public buttonName!: string;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
-  ngOnInit() {
+  public ngOnInit() {
   }
 
+  public openDialog() {
+    const dialogRef = this.dialog.open(DialogComponent);
+    dialogRef.afterClosed().subscribe();
+  }
 }
