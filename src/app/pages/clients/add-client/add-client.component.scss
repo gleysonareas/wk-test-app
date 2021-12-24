@@ -1,0 +1,26 @@
+.input-name {
+    min-width: 37em;
+}
+
+.info {
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: repeat(3, 11em);
+}
+
+.input-cpf {
+    max-width: 10em;
+}
+
+.input-nasciment-date {
+    max-width: 10em;
+}
+
+.input-mail {
+    min-width: 15em;
+}
+
+.input-address {
+    min-width: 37em;
+}

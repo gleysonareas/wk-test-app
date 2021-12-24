@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -17,7 +19,6 @@ import { TabNavComponent } from './tab-nav-component/tab-nav.component';
 import { ButtomComponent } from './buttom-component/buttom.component';
 import { ListComponent } from './list-component/list.component';
 import { CardComponent } from './card-component/card.component';
-import { MatMenuModule } from '@angular/material/menu';
 
 
 @NgModule({
@@ -35,14 +36,16 @@ import { MatMenuModule } from '@angular/material/menu';
     CommonModule,
     MatIconModule,
     MatListModule,
+    MatMenuModule,
     MatTableModule,
     MatInputModule,
     MatSelectModule,
+    MatDialogModule,
     MatButtonModule,
     MatSidenavModule,
     MatToolbarModule,
     MatFormFieldModule,
-    MatMenuModule,
+
   ],
   exports: [
     CommonModule,
@@ -59,10 +62,12 @@ import { MatMenuModule } from '@angular/material/menu';
     ExpansionPanelComponent,
     ToolbarComponent,
     TabNavComponent,
-    DialogComponent,
-    ButtomComponent,
-    ListComponent,
     CardComponent,
+
+    //Serão implementados depois
+    // DialogComponent,
+    // ButtomComponent,
+    // ListComponent,
   ]
 })
 export class ComponentsModule { }
