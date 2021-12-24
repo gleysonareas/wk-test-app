@@ -32,4 +32,14 @@
             <input matInput placeholder="Enter your address">
         </mat-form-field>
     </div>
+
+    <div class="buttons">
+        <div class="save">
+            <button mat-raised-button color="primary" (click)="canSave()">Save</button>
+        </div>
+        <div class="cancel">
+            <button mat-raised-button (click)="canCancel()">Cancel</button>
+        </div>
+    </div>
+
 </form>

@@ -10,7 +10,7 @@ export class ClientsService {
 
   constructor(public service: AppApiService) { }
 
-  public getClient(): void {
+  public getClient(data: any): void {
     this.service.get()
   }
 

@@ -1,8 +1,9 @@
 export class ClientsModel {
     Id?: number;
     Name!: string;
-    Cpf!: string;
-    Address!: string;
+    Cpf!: number;
+    Address?: string;
     Email!: string;
-    NascimentDate!: Date;
+    NascimentDate?: Date;
+    Action?: string;
 }

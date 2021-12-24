@@ -24,3 +24,11 @@
 .input-address {
     min-width: 37em;
 }
+
+.buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 6em);
+    align-items: center;
+    justify-items: center;
+}
