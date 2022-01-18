@@ -1,1 +1,30 @@
-<p>add-client works!</p>
+<form>
+    <div class="info">
+        <div class="id-product" *ngIf="product?.Id">
+            <mat-form-field class="input-product-id" appearance="fill">
+                <mat-label>Product Id:</mat-label>
+                <input matInput placeholder="Product Id" disabled [value]="product?.Id">
+            </mat-form-field>
+        </div>
+        <div class="product-name">
+            <mat-form-field class="input-product-name" appearance="fill">
+                <mat-label>Product Name:</mat-label>
+                <input matInput placeholder="Enter product name">
+            </mat-form-field>
+        </div>
+        <div class="value">
+            <mat-form-field class="input-value" appearance="fill">
+                <mat-label>Value:</mat-label>
+                <input matInput placeholder="Enter product value">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="buttons">
+        <div class="save">
+            <button mat-raised-button color="primary" (click)="canSave()">Save</button>
+        </div>
+        <div class="cancel">
+            <button mat-raised-button (click)="canCancel()">Cancel</button>
+        </div>
+    </div>
+</form>
