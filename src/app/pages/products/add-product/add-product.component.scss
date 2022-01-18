@@ -1,0 +1,26 @@
+.info {
+    display: grid;
+    grid-template-columns: repeat(3, 12em);
+    justify-items: center;
+    justify-content: center;
+}
+
+.input-product-id {
+    max-width: 8em;
+}
+
+.input-product-name {
+    min-width: 10em;
+}
+
+.input-value {
+    max-width: 8em;
+}
+
+.buttons {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 6em);
+    align-items: center;
+    justify-items: center;
+}
